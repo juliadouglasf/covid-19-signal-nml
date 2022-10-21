@@ -180,7 +180,7 @@ optional arguments:
 
 ## Summary:
 
-`signal.py` simplies the execution of all functions of SIGNAL. At its simplest, SIGNAL can be run with one line, provided only the directory of sequencing reads.
+`signal.py` simplifies the execution of all functions of SIGNAL. At its simplest, SIGNAL can be run with one line, provided only the directory of sequencing reads.
 
 ```
 # Download dependances (only needs to be run once; ~10GB of storage required)
@@ -190,7 +190,7 @@ python signal.py --dependencies
 python signal.py --config-only --directory /path/to/reads
 
 # Execute pipeline (step-by-step; --cores defaults to 1 if not provided)
-python signal.py --configfile config.yaml --cores NCORES aLL
+python signal.py --configfile config.yaml --cores NCORES all
 python signal.py --configfile config.yaml --cores NCORES postprocess
 python signal.py --configfile config.yaml --cores NCORES ncov_tools
 
