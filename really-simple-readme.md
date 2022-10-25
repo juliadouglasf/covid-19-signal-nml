@@ -12,8 +12,18 @@
         conda create -n signal -c conda-forge -c bioconda -c defaults snakemake pandas conda
         conda activate signal
 
-### 2. Install `mamba`
+### 2. Get dependencies
 
-        conda install -c conda-forge mamba
-        mamba create -c conda-forge -c bioconda -n signal snakemake pandas conda
-        conda activate signal
+        cd covid-19-signal-nml
+        bash scripts/get_data_dependencies.sh -d data -a MN908947.3
+        
+### 3. Create a directory called 'fastq' within covid-19-signal-nml
+
+        mkdir fastq
+        
+### 4. Add paired fastq files to the fastq directory
+
+### 5. Run the pipeline
+
+        cd ~/covid-19-signal-nml
+        bash run_signal.sh -d ./fastq -p articV3
